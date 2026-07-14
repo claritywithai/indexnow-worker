@@ -2,17 +2,14 @@ name = "indexnow-submitter"
 main = "src/index.js"
 compatibility_date = "2026-01-01"
 
-# Serves the key file on this exact path + lets you manually trigger /run-indexnow
 routes = [
   { pattern = "www.claritywithai.org/3d29f2e57c0af6bfc57701004ab526d6.txt", zone_name = "claritywithai.org" },
   { pattern = "www.claritywithai.org/run-indexnow", zone_name = "claritywithai.org" }
 ]
 
-# Runs daily at 8:00 AM UTC — same schedule as the old GitHub Actions workflow
 [triggers]
 crons = ["0 8 * * *"]
 
-# Replace YOUR_KV_NAMESPACE_ID below with the ID from Cloudflare dashboard > Workers & Pages > KV
 [[kv_namespaces]]
 binding = "INDEXNOW_KV"
-id = "YOUR_KV_NAMESPACE_ID"
+id = "14d53b11a38d4dcb83ecdbdc61294dd3"
