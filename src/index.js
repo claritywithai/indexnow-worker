@@ -5,7 +5,7 @@
 //              new URLs to IndexNow
 // ============================================================
 
-const INDEXNOW_KEY = "3d29f2e57c0af6bfc57701004ab526d6"; // change if you rotate the key
+const INDEXNOW_KEY = "c021679b24ca49dc8084c1f80a69e673"; // change if you rotate the key
 const HOST = "www.claritywithai.org";
 const SITEMAP_URL = "https://www.claritywithai.org/sitemap.xml";
 const KEY_LOCATION = `https://${HOST}/${INDEXNOW_KEY}.txt`;
